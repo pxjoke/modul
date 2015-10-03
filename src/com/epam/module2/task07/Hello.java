@@ -5,6 +5,6 @@ package com.epam.module2.task07;
  */
 public class Hello {
     public static void main(String[] args) {
-        
+
     }
 }
