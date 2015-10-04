@@ -1,7 +1,9 @@
 package com.epam.module1.task06;
 
 /**
- * Created by pxjok on 03.10.2015.
+ *Class Note describes one record in Notebook.
+ * @author Dmitry Gruzdev
+ *
  */
 public class Note {
     private String title;
