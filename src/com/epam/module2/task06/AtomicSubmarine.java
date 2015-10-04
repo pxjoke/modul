@@ -1,7 +1,7 @@
 package com.epam.module2.task06;
 
 /**
- * Created by pxjok on 02.10.2015.
+ * Created by pxjoke on 02.10.2015.
  */
 @SubmarineInfo(
         author = "pxjoke"
@@ -15,39 +15,34 @@ public class AtomicSubmarine {
         this.engine = new Engine();
     }
 
-    class Engine{
-        private boolean launched = false;
-        public void launch(){
-           launched = true;
-        }
+    class Engine {
+        public boolean launched = false;
+        private final String engineSerialName = "RZ-1247Core";
 
-        public void stop(){
-            launched = false;
+        public String getEngineSerialName() {
+            return engineSerialName;
         }
-
-        public boolean isLaunched() {
-            return launched;
-        }
-    }
-
-    public String getStatus(){
-        return engine.isLaunched() ? "Engine launched!" : "Engine stopped!";
     }
 
     public String getName() {
         return name;
     }
 
-    public void launch(){
-        engine.launch();
+    public void launch() {
+        engine.launched = true;
     }
 
-    public void stop(){
-        engine.stop();
+    public void stop() {
+        engine.launched = false;
+    }
+
+    public String getStatus() {
+        return engine.launched ? "Engine launched!" : "Engine stopped!";
     }
 
     @Override
     public String toString() {
-        return "Submarine " + name + ". Status: " + getStatus();
+        return "Submarine " + name + ". Status: " + getStatus() + " Engine Serial: " +
+                engine.getEngineSerialName();
     }
 }
