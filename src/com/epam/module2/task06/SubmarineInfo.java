@@ -10,6 +10,5 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface SubmarineInfo {
     String author() default "John Doe";
-
-
+    String description();
 }

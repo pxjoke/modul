@@ -4,7 +4,8 @@ package com.epam.module2.task06;
  * Created by pxjoke on 02.10.2015.
  */
 @SubmarineInfo(
-        author = "pxjoke"
+        author = "pxjoke",
+        description = "This class describe Submarine with RZ-12Core engine."
 )
 public class AtomicSubmarine {
     private Engine engine;
@@ -17,7 +18,7 @@ public class AtomicSubmarine {
 
     class Engine {
         public boolean launched = false;
-        private final String engineSerialName = "RZ-1247Core";
+        private final String engineSerialName = "RZ-12Core";
 
         public String getEngineSerialName() {
             return engineSerialName;
