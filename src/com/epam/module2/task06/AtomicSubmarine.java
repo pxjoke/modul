@@ -37,13 +37,13 @@ public class AtomicSubmarine {
         engine.launched = false;
     }
 
-    public String getStatus() {
+    public String getEngineStatus() {
         return engine.launched ? "Engine launched!" : "Engine stopped!";
     }
 
     @Override
     public String toString() {
-        return "Submarine " + name + ". Status: " + getStatus() + " Engine Serial: " +
+        return "Submarine " + name + ". Status: " + getEngineStatus() + " Engine Serial: " +
                 engine.getEngineSerialName();
     }
 }
