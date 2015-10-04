@@ -1,4 +1,4 @@
-package com.epam.module2.task06;
+package com.epam.module2.task067;
 
 import java.lang.annotation.*;
 

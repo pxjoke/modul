@@ -1,4 +1,4 @@
-package com.epam.module2.task06;
+package com.epam.module2.task067;
 
 /**
  * Created by pxjoke on 02.10.2015.
