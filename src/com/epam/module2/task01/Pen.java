@@ -14,6 +14,15 @@ public class Pen {
     private String name;
     private int id;
 
+    public Pen() {
+        type = PenType.BALLPOIN;
+        rodThickness = 0.5;
+        rodLength = 10.0;
+        manufacturer = "none";
+        name = "none";
+        id = 0;
+    }
+
     public PenType getType() {
         return type;
     }
@@ -62,15 +71,6 @@ public class Pen {
         this.id = id;
     }
 
-    public Pen() {
-        type = PenType.BALLPOIN;
-        rodThickness = 0.5;
-        rodLength = 10.0;
-        manufacturer = "none";
-        name = "none";
-        id = 0;
-    }
-
     public Pen(String name, String manufacturer, PenType type, double rodThickness, double rodLength, int id) {
         this.type = type;
         this.rodThickness = rodThickness;
@@ -78,6 +78,19 @@ public class Pen {
         this.manufacturer = manufacturer;
         this.name = name;
         this.id = id;
+    }
+
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        result = type.hashCode();
+        temp = Double.doubleToLongBits(rodThickness);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(rodLength);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        result = 31 * result + id;
+        return result;
     }
 
     @Override
@@ -94,19 +107,6 @@ public class Pen {
         if (!manufacturer.equals(pen.manufacturer)) return false;
         return name.equals(pen.name);
 
-    }
-
-    @Override
-    public int hashCode() {
-        int result;
-        long temp;
-        result = type.hashCode();
-        temp = Double.doubleToLongBits(rodThickness);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        temp = Double.doubleToLongBits(rodLength);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        result = 31 * result + id;
-        return result;
     }
 
     @Override
