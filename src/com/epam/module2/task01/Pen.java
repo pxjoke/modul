@@ -4,7 +4,7 @@ package com.epam.module2.task01;
 import com.epam.module2.task02.PenType;
 
 /**
- * Created by pxjok on 30.09.2015.
+ * Created by pxjoke on 30.09.2015.
  */
 public class Pen {
     private PenType type;
@@ -21,6 +21,15 @@ public class Pen {
         manufacturer = "none";
         name = "none";
         id = 0;
+    }
+
+    public Pen(String name, String manufacturer, PenType type, double rodThickness, double rodLength, int id) {
+        this.type = type;
+        this.rodThickness = rodThickness;
+        this.rodLength = rodLength;
+        this.manufacturer = manufacturer;
+        this.name = name;
+        this.id = id;
     }
 
     public PenType getType() {
@@ -68,15 +77,6 @@ public class Pen {
     }
 
     public void setId(int id) {
-        this.id = id;
-    }
-
-    public Pen(String name, String manufacturer, PenType type, double rodThickness, double rodLength, int id) {
-        this.type = type;
-        this.rodThickness = rodThickness;
-        this.rodLength = rodLength;
-        this.manufacturer = manufacturer;
-        this.name = name;
         this.id = id;
     }
 
