@@ -1,11 +1,11 @@
 package com.epam.module1.task05;
 
 /**
- * Created by pxjok on 03.10.2015.
+ * Created by pxjoke on 03.10.2015.
  */
-public class Matrix {
-    private int dimension;
-    private int[][] matrix;
+class Matrix {
+    private final int dimension;
+    private final int[][] matrix;
 
     public Matrix(int dimension) {
         this.dimension = Math.abs(dimension);

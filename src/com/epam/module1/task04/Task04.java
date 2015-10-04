@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * Created by pxjok on 03.10.2015.
+ * Created by pxjoke on 03.10.2015.
  */
 public class Task04 {
     public static void main(String[] args) {
@@ -31,7 +31,7 @@ public class Task04 {
 
     }
 
-    public static double findMaxSum(double[] a) {
+    private static double findMaxSum(double[] a) {
         double max = Double.MIN_VALUE;
         int n = a.length / 2;
         for (int i = 0; i < n; i++) {

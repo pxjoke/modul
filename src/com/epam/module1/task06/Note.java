@@ -5,7 +5,7 @@ package com.epam.module1.task06;
  * @author Dmitry Gruzdev
  *
  */
-public class Note {
+class Note {
     private String title;
     private String text;
     private String author;

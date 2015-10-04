@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * Created by pxjok on 03.10.2015.
+ * Created by pxjoke on 03.10.2015.
  */
 public class Task05 {
     public static void main(String[] args) {

@@ -9,7 +9,7 @@ import java.util.List;
  *
  * @author Dmitry Gruzdev
  */
-public class NoteBook {
+class NoteBook {
     private List<Note> notes = new ArrayList<>();
 
     /**
@@ -54,7 +54,7 @@ public class NoteBook {
 
     /**
      *
-     * @return Numner of notes in array.
+     * @return Number of notes in array.
      */
     public int getNotesNumber() {
         return notes.size();
