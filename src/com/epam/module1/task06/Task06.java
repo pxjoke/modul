@@ -17,7 +17,6 @@ public class Task06 {
         System.out.println(noteBook.printAll());
 
 
-
         noteBook.remove(0);
 
         System.out.println(noteBook.printAll());
