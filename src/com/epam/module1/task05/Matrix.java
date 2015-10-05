@@ -15,9 +15,8 @@ class Matrix {
 
     private void generate() {
         for (int i = 0; i < dimension; i++) {
-            for (int j = 0; j < dimension; j++) {
-                if ((i == j) || (i == (dimension - j - 1))) matrix[i][j] = 1;
-            }
+            matrix[i][i] = 1;
+            matrix[i][dimension - i - 1] = 1;
         }
     }
 
