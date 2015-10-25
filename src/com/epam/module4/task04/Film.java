@@ -1,9 +1,11 @@
 package com.epam.module4.task04;
 
+import java.io.Serializable;
+
 /**
  * Created by pxjok on 25.10.2015.
  */
-public class Film {
+public class Film implements Serializable{
     String title = "untitled";
     String director = "unknown";
 
@@ -30,5 +32,10 @@ public class Film {
 
     public void setDirector(String director) {
         this.director = director;
+    }
+
+    @Override
+    public String toString() {
+        return title + "  " + director;
     }
 }

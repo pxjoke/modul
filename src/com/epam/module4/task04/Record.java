@@ -1,10 +1,12 @@
 package com.epam.module4.task04;
 
 
+import java.io.Serializable;
+
 /**
  * Created by pxjok on 25.10.2015.
  */
-public class Record {
+public class Record implements Serializable{
     private Actor actor = null;
     private Film film = null;
 

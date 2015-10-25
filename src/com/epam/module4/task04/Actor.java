@@ -1,9 +1,11 @@
 package com.epam.module4.task04;
 
+import java.io.Serializable;
+
 /**
  * Created by pxjok on 25.10.2015.
  */
-public class Actor {
+public class Actor implements Serializable{
     String name = "unknown";
 
     public Actor(String name) {
@@ -20,5 +22,10 @@ public class Actor {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }
