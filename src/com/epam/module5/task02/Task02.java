@@ -1,5 +1,7 @@
 package com.epam.module5.task02;
 
+import com.epam.module3.task01.CrazyLogger;
+
 /**
  * Created by pxjok on 26.10.2015.
  */
