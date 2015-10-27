@@ -7,6 +7,5 @@ import com.epam.module3.task01.CrazyLogger;
  */
 public class Task02 {
     public static void main(String[] args) {
-
     }
 }
